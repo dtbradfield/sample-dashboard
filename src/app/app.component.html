@@ -1,21 +1,26 @@
-<div class="container-fluid">
+<div>
   <div class="row">
     <div class="col">
       <app-action-nav></app-action-nav>
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-lg-3 col-xl-3">
       <div class="shadow">
         <app-sidenav></app-sidenav>
       </div>
     </div>
-    <div class="col-sm-9">
+  </div>
+  <div class="row">
+    <div class="col">
       <br>
       <app-welcome></app-welcome>
       <br>
       <router-outlet></router-outlet>
-      <br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
       <app-footer></app-footer>
     </div>
   </div>
