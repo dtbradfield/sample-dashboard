@@ -12,4 +12,16 @@ export class WelcomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  showWelcome: boolean = true;
+
+  showTip: boolean = true;
+
+  onHideWelcome() {
+    this.showWelcome = !this.showWelcome;
+  }
+
+  onHideTip() {
+    this.showTip = !this.showTip;
+  }
+
 }

@@ -1,5 +1,40 @@
-<div class="card">
-  <div class="card-header">
-    Welcome, UserName!
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card shadow" style="width: 30rem; right: auto;" *ngIf="showWelcome">
+        <div class="text-right">
+          <a class="btn" style="cursor: pointer;" (click)="onHideWelcome()">x</a>
+        </div>
+        <div class="card-header text-center">
+          <h3>Welcome, UserName!</h3>
+        </div>
+        <div class="card-body text-center">
+          <p class="card-text"><span class="badge badge-primary">New</span> &nbsp; Important information to display here
+          </p>
+          <p class="card-text">Older info here</p>
+        </div>
+        <div class="card-footer text-right">
+          <small class="text-muted">Last login: yesterday</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow" style="width: 30rem; right: auto;" *ngIf="showTip">
+        <div class="text-right">
+          <a class="btn" style="cursor: pointer;" (click)="onHideTip()">x</a>
+        </div>
+        <div class="card-header text-center">
+          <h3>Tip:</h3>
+        </div>
+        <div class="card-body text-center">
+          <p class="card-text"><span class="badge badge-primary">New</span> &nbsp; Important information to display here
+          </p>
+          <small class="card-text"><span class="badge badge-pill badge-warning">Careful</span> &nbsp;Following this tip is at your own risk.</small>
+        </div>
+        <div class="card-footer text-right">
+          <small class="text-muted">Help</small>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
