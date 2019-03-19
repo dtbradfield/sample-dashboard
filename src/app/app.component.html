@@ -1,12 +1,11 @@
-<div class="container-fluid">
+<div class="container">
   <div class="row">
-    <div class="col-xs-3">
-      <button class="btn btn-primary" type="button" (click)="onSideNav()">{{sideMessage}}</button>
-      <div *ngIf="showSidenav">
+    <div class="col">
+      <div>
         <app-sidenav></app-sidenav>
       </div>
     </div>
-    <div class="col-xs-9">
+    <div class="col">
       <app-action-nav></app-action-nav>
       <router-outlet></router-outlet>
       <app-footer></app-footer>

@@ -12,4 +12,15 @@ export class SidenavComponent implements OnInit {
   ngOnInit() {
   }
 
+  sideMessage: string = 'hide';
+
+  showSidenav: boolean = true;
+
+  onSideNav() {
+    this.showSidenav = !this.showSidenav;
+    if (this.showSidenav) {
+      this.sideMessage = 'hide'
+    } else {this.sideMessage = 'show'}
+  }
+
 }

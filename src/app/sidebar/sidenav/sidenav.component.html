@@ -1,3 +1,15 @@
-<p>
-  sidenav works!
-</p>
+<button class="btn btn-info" type="button" *ngIf="!showSidenav" (click)="onSideNav()">{{sideMessage}}</button>
+<div class="container-fluid" *ngIf="showSidenav" style="background-color: #17384A; color: #EFE8E3; position: fixed; width: auto; height: 100%;">
+    <button class="btn btn-info" type="button" *ngIf="showSidenav" (click)="onSideNav()">{{sideMessage}}</button>
+  <div class="row">
+    <app-sidenav-el1></app-sidenav-el1>
+  </div>
+  <hr>
+  <div class="row">
+    <app-sidenav-el2></app-sidenav-el2>
+  </div>
+  <hr>
+  <div class="row">
+    <app-sidenav-el3></app-sidenav-el3>
+  </div>
+</div>

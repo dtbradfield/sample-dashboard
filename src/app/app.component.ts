@@ -5,23 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'sample-dashboard';
-
-  sideMessage: string = 'hide';
-
-  ngOnInit() {}
-
-  constructor() { }
-
-  showSidenav: boolean = true;
-
-  onSideNav() {
-    this.showSidenav = !this.showSidenav;
-    if (this.showSidenav) {
-      this.sideMessage = 'hide'
-    } else {this.sideMessage = 'show'}
-  }
-
-
 }
