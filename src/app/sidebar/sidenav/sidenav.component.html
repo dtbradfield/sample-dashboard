@@ -1,11 +1,15 @@
 <div class="container-fluid text-center" *ngIf="!showSidenav"
-  style="background-color: #17384A; position: fixed; width: 10%; height: auto; padding: 0.5%; border-radius: 8px;">
-  <button class="btn btn-info" type="button" (click)="onSideNav()">&#9776;</button>
+  style="background-color: #17384A; position: fixed; width: auto; height: auto; padding: 0.5%; border-radius: 8px;">
+  <div class="row">
+    <div class="col">
+      <button class="btn btn-info" type="button" (click)="onSideNav()">&#9776;</button>
+    </div>
+  </div>
 </div>
 
 <div class="container-fluid text-center" *ngIf="showSidenav"
-  style="background-color: #17384A; position: fixed; width: 10%; height: 100%; padding: 0.5%; border-radius: 8px;">
-  <button class="btn btn-secondary" type="button" *ngIf="showSidenav" (click)="onSideNav()">{{sideMessage}}</button>
+  style="background-color: #17384A; position: fixed; width: auto; height: 90%; padding: 0.5%; border-radius: 8px;">
+  <button class="btn btn-secondary" type="button" (click)="onSideNav()">{{sideMessage}}</button>
   <div class="row">
     <div class="col">
       <a class="btn" routerLink='sidenav-el1'>Profile Picture Here</a>

@@ -22,6 +22,7 @@ import { MailPreviewComponent } from './main/mailbox/mail-preview/mail-preview.c
 import { MainEl1Component } from './main/main-el1/main-el1.component';
 import { MainEl2Component } from './main/main-el2/main-el2.component';
 import { FooterComponent } from './footer/footer/footer.component';
+import { LandingComponent } from './main/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { FooterComponent } from './footer/footer/footer.component';
     MailPreviewComponent,
     MainEl1Component,
     MainEl2Component,
-    FooterComponent
+    FooterComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
