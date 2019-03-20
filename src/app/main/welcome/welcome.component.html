@@ -3,7 +3,7 @@
     <div class="col">
       <div class="card shadow" style="width: 30rem; right: auto;" *ngIf="showWelcome">
         <div class="text-right">
-          <a class="btn" style="cursor: pointer;" (click)="onHideWelcome()">x</a>
+          <a class="btn" style="cursor: pointer;" (click)="onHideWelcome()">&times;</a>
         </div>
         <div class="card-header text-center">
           <h3>Welcome, UserName!</h3>
@@ -21,7 +21,7 @@
     <div class="col">
       <div class="card shadow" style="width: 30rem; right: auto;" *ngIf="showTip">
         <div class="text-right">
-          <a class="btn" style="cursor: pointer;" (click)="onHideTip()">x</a>
+          <a class="btn" style="cursor: pointer;" (click)="onHideTip()">&times;</a>
         </div>
         <div class="card-header text-center">
           <h3>Tip:</h3>
