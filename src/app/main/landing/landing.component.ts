@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
+  loading: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onLoadElement() {
+    this.loading = !this.loading;
+    setTimeout(() => {
+      this.loading = !this.loading;
+    }, 6000)
   }
 
 }
