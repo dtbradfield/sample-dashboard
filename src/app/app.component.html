@@ -1,34 +1,27 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-12 px-1 bg-light">
+    <div class="col-sm-12 col-xl-12 px-1 bg-light">
       <div class="py-2 sticky-top flex-grow-1">
         <app-action-nav></app-action-nav>
       </div>
     </div>
   </div>
 </div>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-2 px-1 bg-dark">
-      <div class="py-2 sticky-top flex-grow-1">
+<div class="container-fluid h-100">
+  <div class="row h-100">
+    <div class="col-sm-2 col-xl-2 px-1 bg-dark">
+      <div class="py-2 position-fixed flex-grow-1">
         <div class="nav flex-sm-column">
           <app-sidenav></app-sidenav>
         </div>
       </div>
     </div>
-    <div class="col-sm-10 px-5">
+    <div class="col-sm-10 col-xl-10 px-5">
       <br>
       <app-welcome></app-welcome>
       <br>
       <router-outlet></router-outlet>
       <br>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12 px-1 bg-light">
-      <div class="py-2 position-fixed-bottom flex-grow-1">
-        <app-footer></app-footer>
-      </div>
     </div>
   </div>
 </div>
