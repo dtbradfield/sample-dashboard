@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavEl1Component implements OnInit {
 
+  hidden: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onHide() {
+    this.hidden = !this.hidden;
   }
 
 }
