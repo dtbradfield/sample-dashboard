@@ -15,7 +15,6 @@ import { ActionNavEl3Component } from './topbar/action-nav-el3/action-nav-el3.co
 import { WelcomeComponent } from './main/welcome/welcome.component';
 import { MainEl1Component } from './main/main-el1/main-el1.component';
 import { MainEl2Component } from './main/main-el2/main-el2.component';
-import { FooterComponent } from './footer/footer/footer.component';
 import { LandingComponent } from './main/landing/landing.component';
 
 @NgModule({
@@ -32,7 +31,6 @@ import { LandingComponent } from './main/landing/landing.component';
     WelcomeComponent,
     MainEl1Component,
     MainEl2Component,
-    FooterComponent,
     LandingComponent
   ],
   imports: [

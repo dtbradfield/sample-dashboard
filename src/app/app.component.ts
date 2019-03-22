@@ -7,4 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
   title = 'sample-dashboard';
+
+  constructor() { }
+  
+  hideIt: boolean = true;
+
+  onHideIt() {
+    this.hideIt = !this.hideIt;
+  } 
+
 }

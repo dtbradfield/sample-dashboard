@@ -16,7 +16,17 @@
     </div>
     <div class="col-sm-10 col-lg-10 col-xl-10 px-5">
       <br>
-      <app-welcome></app-welcome>
+      <div class="container">
+        <div class="card shadow">
+          <div class="text-right card-header">
+            <a class="button" type="button" (click)="onHideIt()" *ngIf="hideIt">&times;</a>
+            <a class="button" type="button" (click)="onHideIt()" *ngIf="!hideIt"><strong>-</strong></a>
+          </div>
+          <div class="card-body bg-secondary text-center" *ngIf="hideIt">
+            <app-welcome></app-welcome>
+          </div>
+        </div>
+      </div>
       <br>
       <router-outlet></router-outlet>
       <br>
